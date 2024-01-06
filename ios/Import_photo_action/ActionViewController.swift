@@ -5,16 +5,23 @@
 //  Created by Lucas Goldner on 06.01.24.
 //
 
-import UIKit
 import MobileCoreServices
+import UIKit
 import UniformTypeIdentifiers
 
 class ActionViewController: UIViewController {
-
-    @IBOutlet weak var imageView: UIImageView!
+    var hostAppBundleIdentifier = "com.lucas-goldner.goldenIosExtensions"
+    let sharedKey = "ImportKey"
+    var appGroupId = "group.com.lucas-goldner.goldenIosExtensions"
+    var imageURL: URL?
+    var importedMedia: [ImportedFile] = []
+    
+    @IBOutlet var imageView: UIImageView!
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        loadIds()
     
         // Get the item[s] we're handling from the extension context.
         
@@ -26,7 +33,7 @@ class ActionViewController: UIViewController {
                 if provider.hasItemConformingToTypeIdentifier(UTType.image.identifier) {
                     // This is an image. We'll load it, then place it in our image view.
                     weak var weakImageView = self.imageView
-                    provider.loadItem(forTypeIdentifier: UTType.image.identifier, options: nil, completionHandler: { (imageURL, error) in
+                    provider.loadItem(forTypeIdentifier: UTType.image.identifier, options: nil, completionHandler: { imageURL, _ in
                         OperationQueue.main.addOperation {
                             if let strongImageView = weakImageView {
                                 if let imageURL = imageURL as? URL {
@@ -41,7 +48,7 @@ class ActionViewController: UIViewController {
                 }
             }
             
-            if (imageFound) {
+            if imageFound {
                 // We only handle one image, so stop looking for more.
                 break
             }
@@ -49,9 +56,77 @@ class ActionViewController: UIViewController {
     }
 
     @IBAction func done() {
-        // Return any edited content to the host app.
-        // This template doesn't do anything, so we just echo the passed in items.
-        self.extensionContext!.completeRequest(returningItems: self.extensionContext!.inputItems, completionHandler: nil)
-    }
+        guard let url = self.imageURL else {
+            self.extensionContext!.completeRequest(returningItems: self.extensionContext!.inputItems, completionHandler: nil)
+            return
+        }
+        let fileName = "\(url.deletingPathExtension().lastPathComponent).\(url.pathExtension)"
+        let newPath = FileManager.default
+            .containerURL(forSecurityApplicationGroupIdentifier: self.appGroupId)!
+            .appendingPathComponent(fileName)
+        let copied = self.copyFile(at: url, to: newPath)
+        if copied {
+            let sharedFile = ImportedFile(
+                path: newPath.absoluteString,
+                name: fileName
+            )
+            self.importedMedia.append(sharedFile)
+        }
 
+        let userDefaults = UserDefaults(suiteName: self.appGroupId)
+        userDefaults?.set(self.toData(data: self.importedMedia), forKey: self.sharedKey)
+        userDefaults?.synchronize()
+        self.redirectToHostApp()
+    }
+    
+    private func redirectToHostApp() {
+        let url = URL(string: "ImportMedia-\(hostAppBundleIdentifier)://dataUrl=\(sharedKey)")
+        var responder = self as UIResponder?
+        let selectorOpenURL = sel_registerName("openURL:")
+
+        while responder != nil {
+            if (responder?.responds(to: selectorOpenURL))! {
+                let _ = responder?.perform(selectorOpenURL, with: url)
+            }
+            responder = responder!.next
+        }
+        extensionContext!.completeRequest(returningItems: [], completionHandler: nil)
+    }
+       
+    private func loadIds() {
+        let shareExtensionAppBundleIdentifier = Bundle.main.bundleIdentifier!
+       
+        let lastIndexOfPoint = shareExtensionAppBundleIdentifier.lastIndex(of: ".")
+        self.hostAppBundleIdentifier = String(shareExtensionAppBundleIdentifier[..<lastIndexOfPoint!])
+
+        self.appGroupId = (Bundle.main.object(forInfoDictionaryKey: "AppGroupId") as? String) ?? "group.\(self.hostAppBundleIdentifier)"
+    }
+       
+    func toData(data: [ImportedFile]) -> Data {
+        let encodedData = try? JSONEncoder().encode(data)
+        return encodedData!
+    }
+       
+    func copyFile(at srcURL: URL, to dstURL: URL) -> Bool {
+        do {
+            if FileManager.default.fileExists(atPath: dstURL.path) {
+                try FileManager.default.removeItem(at: dstURL)
+            }
+            try FileManager.default.copyItem(at: srcURL, to: dstURL)
+        } catch {
+            print("Cannot copy item at \(srcURL) to \(dstURL): \(error)")
+            return false
+        }
+        return true
+    }
+}
+
+class ImportedFile: Codable {
+    var path: String
+    var name: String
+    
+    init(path: String, name: String) {
+        self.path = path
+        self.name = name
+    }
 }
