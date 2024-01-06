@@ -1,5 +1,5 @@
 import 'package:flutter/cupertino.dart';
-import 'package:golden_ios_extensions/extensions/action_content.dart';
+import 'package:golden_ios_extensions/extensions/action/action_content.dart';
 
 enum Extensions {
   action(
