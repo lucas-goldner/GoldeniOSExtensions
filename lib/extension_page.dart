@@ -21,7 +21,14 @@ class ExtensionPage extends StatelessWidget {
                 const SizedBox(
                   height: 20,
                 ),
-                extension.content ?? const SizedBox.shrink(),
+                Padding(
+                  padding: const EdgeInsets.all(8.0),
+                  child: Text("Description: ${extension.description}"),
+                ),
+                const SizedBox(
+                  height: 20,
+                ),
+                extension.content,
               ],
             ),
           ),
