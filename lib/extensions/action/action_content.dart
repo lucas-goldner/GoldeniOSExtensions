@@ -10,8 +10,9 @@ class ActionContent extends StatelessWidget {
         child: StreamBuilder<List<ImportedFile>>(
             stream: ImportFileChannel().getMediaStream(),
             builder: (context, snapshot) {
+              print(snapshot.data);
               if (snapshot.hasData) {
-                return Image.asset(snapshot.data![0].path);
+                return Image.asset(snapshot.data!.first.path);
               }
 
               return const Text("Waiting for file import...");

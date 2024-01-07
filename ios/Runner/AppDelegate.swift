@@ -24,15 +24,15 @@ import Photos
         return super.application(application, didFinishLaunchingWithOptions: launchOptions)
     }
     
-    override func application(_ app: UIApplication, open url: URL, options: [UIApplication.OpenURLOptionsKey: Any] = [:]) -> Bool {
-        let controller: FlutterViewController = window?.rootViewController as! FlutterViewController
+    override func application(_ app: UIApplication, open url: URL, options: [UIApplication.OpenURLOptionsKey : Any] = [:]) -> Bool {
+        let controller : FlutterViewController = window?.rootViewController as! FlutterViewController
         self.initChannels(controller: controller)
         
-        if self.hasMatchingSchemePrefix(url: url) {
+        if (self.hasMatchingSchemePrefix(url: url)) {
             return self.handleUrl(url: url, setInitialData: false)
         }
         
-        return super.application(app, open: url, options: options)
+        return super.application(app, open: url, options:options)
     }
     
     func initChannels(controller: FlutterViewController) -> Void {
@@ -41,6 +41,7 @@ import Photos
     }
 }
 
+// MARK: - Event channel related
 extension AppDelegate: FlutterStreamHandler {
     public func onListen(withArguments arguments: Any?, eventSink events: @escaping FlutterEventSink) -> FlutterError? {
         if (arguments as! String? == "media") {
@@ -56,7 +57,6 @@ extension AppDelegate: FlutterStreamHandler {
         return nil;
     }
 }
-
 
 extension AppDelegate {
     
@@ -74,9 +74,9 @@ extension AppDelegate {
             let appGroupId = (Bundle.main.object(forInfoDictionaryKey: "AppGroupId") as? String) ?? "group.\(Bundle.main.bundleIdentifier!)"
             
             let userDefaults = UserDefaults(suiteName: appGroupId)
-            
+
             if let key = url.host?.components(separatedBy: "=").last,
-               let json = userDefaults?.object(forKey: key) as? Data {
+                let json = userDefaults?.object(forKey: key) as? Data {
                 let sharedArray = decode(data: json)
                 let sharedMediaFiles: [ImportedFile] = sharedArray.compactMap {
                     guard let path = getAbsolutePath(for: $0.path) else {
@@ -88,7 +88,7 @@ extension AppDelegate {
                         name: $0.name
                     )
                 }
-                
+
                 latestMedia = sharedMediaFiles
                 if(setInitialData) {
                     initialMedia = latestMedia
@@ -140,7 +140,6 @@ extension AppDelegate {
         return json
     }
 }
-
 
 class ImportedFile: Codable {
     var path: String;
