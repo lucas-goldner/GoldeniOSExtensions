@@ -9,6 +9,13 @@
 /* Begin PBXBuildFile section */
 		1498D2341E8E89220040F4C2 /* GeneratedPluginRegistrant.m in Sources */ = {isa = PBXBuildFile; fileRef = 1498D2331E8E89220040F4C2 /* GeneratedPluginRegistrant.m */; };
 		3B3967161E833CAA004F5970 /* AppFrameworkInfo.plist in Resources */ = {isa = PBXBuildFile; fileRef = 3B3967151E833CAA004F5970 /* AppFrameworkInfo.plist */; };
+		4D29F8512B4ADA2D0077EF51 /* UniformTypeIdentifiers.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4DE9F9C52B493A6E0015F780 /* UniformTypeIdentifiers.framework */; };
+		4D29F8542B4ADA2D0077EF51 /* Media.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4D29F8532B4ADA2D0077EF51 /* Media.xcassets */; };
+		4D29F8562B4ADA2D0077EF51 /* ActionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D29F8552B4ADA2D0077EF51 /* ActionViewController.swift */; };
+		4D29F8592B4ADA2D0077EF51 /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4D29F8572B4ADA2D0077EF51 /* MainInterface.storyboard */; };
+		4D29F85D2B4ADA2D0077EF51 /* Import_photo_action_flutter.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 4D29F8502B4ADA2C0077EF51 /* Import_photo_action_flutter.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		4D29F8632B4ADB850077EF51 /* Flutter.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4D29F8482B4AD7E50077EF51 /* Flutter.xcframework */; };
+		4D29F8642B4ADB850077EF51 /* Flutter.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 4D29F8482B4AD7E50077EF51 /* Flutter.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		4DE9F9C62B493A6E0015F780 /* UniformTypeIdentifiers.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4DE9F9C52B493A6E0015F780 /* UniformTypeIdentifiers.framework */; };
 		4DE9F9C92B493A6E0015F780 /* Media.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4DE9F9C82B493A6E0015F780 /* Media.xcassets */; };
 		4DE9F9CB2B493A6E0015F780 /* ActionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DE9F9CA2B493A6E0015F780 /* ActionViewController.swift */; };
@@ -21,6 +28,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		4D29F85B2B4ADA2D0077EF51 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 97C146E61CF9000F007C117D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4D29F84F2B4ADA2C0077EF51;
+			remoteInfo = Import_photo_action_flutter;
+		};
 		4DE9F9D02B493A6E0015F780 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 97C146E61CF9000F007C117D /* Project object */;
@@ -31,6 +45,17 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
+		4D29F8652B4ADB850077EF51 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				4D29F8642B4ADB850077EF51 /* Flutter.xcframework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		4DE9F9D32B493A6E0015F780 /* Embed Foundation Extensions */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
@@ -38,6 +63,7 @@
 			dstSubfolderSpec = 13;
 			files = (
 				4DE9F9D22B493A6E0015F780 /* Import_photo_action.appex in Embed Foundation Extensions */,
+				4D29F85D2B4ADA2D0077EF51 /* Import_photo_action_flutter.appex in Embed Foundation Extensions */,
 			);
 			name = "Embed Foundation Extensions";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -59,6 +85,13 @@
 		1498D2331E8E89220040F4C2 /* GeneratedPluginRegistrant.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GeneratedPluginRegistrant.m; sourceTree = "<group>"; };
 		331C807B294A618700263BE5 /* RunnerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RunnerTests.swift; sourceTree = "<group>"; };
 		3B3967151E833CAA004F5970 /* AppFrameworkInfo.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = AppFrameworkInfo.plist; path = Flutter/AppFrameworkInfo.plist; sourceTree = "<group>"; };
+		4D29F8482B4AD7E50077EF51 /* Flutter.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = Flutter.xcframework; path = ../../../SDKs/flutter/bin/cache/artifacts/engine/ios/extension_safe/Flutter.xcframework; sourceTree = "<group>"; };
+		4D29F8502B4ADA2C0077EF51 /* Import_photo_action_flutter.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = Import_photo_action_flutter.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		4D29F8532B4ADA2D0077EF51 /* Media.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Media.xcassets; sourceTree = "<group>"; };
+		4D29F8552B4ADA2D0077EF51 /* ActionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActionViewController.swift; sourceTree = "<group>"; };
+		4D29F8582B4ADA2D0077EF51 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
+		4D29F85A2B4ADA2D0077EF51 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4D29F8622B4ADACF0077EF51 /* Import_photo_action_flutter.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Import_photo_action_flutter.entitlements; sourceTree = "<group>"; };
 		4DE9F9C32B493A6E0015F780 /* Import_photo_action.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = Import_photo_action.appex; sourceTree = BUILT_PRODUCTS_DIR; };
 		4DE9F9C52B493A6E0015F780 /* UniformTypeIdentifiers.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UniformTypeIdentifiers.framework; path = System/Library/Frameworks/UniformTypeIdentifiers.framework; sourceTree = SDKROOT; };
 		4DE9F9C82B493A6E0015F780 /* Media.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Media.xcassets; sourceTree = "<group>"; };
@@ -80,6 +113,15 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		4D29F84D2B4ADA2C0077EF51 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4D29F8632B4ADB850077EF51 /* Flutter.xcframework in Frameworks */,
+				4D29F8512B4ADA2D0077EF51 /* UniformTypeIdentifiers.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		4DE9F9C02B493A6E0015F780 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -106,9 +148,22 @@
 			path = RunnerTests;
 			sourceTree = "<group>";
 		};
+		4D29F8522B4ADA2D0077EF51 /* Import_photo_action_flutter */ = {
+			isa = PBXGroup;
+			children = (
+				4D29F8622B4ADACF0077EF51 /* Import_photo_action_flutter.entitlements */,
+				4D29F8532B4ADA2D0077EF51 /* Media.xcassets */,
+				4D29F8552B4ADA2D0077EF51 /* ActionViewController.swift */,
+				4D29F8572B4ADA2D0077EF51 /* MainInterface.storyboard */,
+				4D29F85A2B4ADA2D0077EF51 /* Info.plist */,
+			);
+			path = Import_photo_action_flutter;
+			sourceTree = "<group>";
+		};
 		4DE9F9C42B493A6E0015F780 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				4D29F8482B4AD7E50077EF51 /* Flutter.xcframework */,
 				4DE9F9C52B493A6E0015F780 /* UniformTypeIdentifiers.framework */,
 			);
 			name = Frameworks;
@@ -143,6 +198,7 @@
 				9740EEB11CF90186004384FC /* Flutter */,
 				97C146F01CF9000F007C117D /* Runner */,
 				4DE9F9C72B493A6E0015F780 /* Import_photo_action */,
+				4D29F8522B4ADA2D0077EF51 /* Import_photo_action_flutter */,
 				4DE9F9C42B493A6E0015F780 /* Frameworks */,
 				97C146EF1CF9000F007C117D /* Products */,
 				331C8082294A63A400263BE5 /* RunnerTests */,
@@ -154,6 +210,7 @@
 			children = (
 				97C146EE1CF9000F007C117D /* Runner.app */,
 				4DE9F9C32B493A6E0015F780 /* Import_photo_action.appex */,
+				4D29F8502B4ADA2C0077EF51 /* Import_photo_action_flutter.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -177,6 +234,24 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		4D29F84F2B4ADA2C0077EF51 /* Import_photo_action_flutter */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4D29F85E2B4ADA2D0077EF51 /* Build configuration list for PBXNativeTarget "Import_photo_action_flutter" */;
+			buildPhases = (
+				4D29F84C2B4ADA2C0077EF51 /* Sources */,
+				4D29F84D2B4ADA2C0077EF51 /* Frameworks */,
+				4D29F84E2B4ADA2C0077EF51 /* Resources */,
+				4D29F8652B4ADB850077EF51 /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Import_photo_action_flutter;
+			productName = Import_photo_action_flutter;
+			productReference = 4D29F8502B4ADA2C0077EF51 /* Import_photo_action_flutter.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 		4DE9F9C22B493A6E0015F780 /* Import_photo_action */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 4DE9F9D72B493A6E0015F780 /* Build configuration list for PBXNativeTarget "Import_photo_action" */;
@@ -210,6 +285,7 @@
 			);
 			dependencies = (
 				4DE9F9D12B493A6E0015F780 /* PBXTargetDependency */,
+				4D29F85C2B4ADA2D0077EF51 /* PBXTargetDependency */,
 			);
 			name = Runner;
 			productName = Runner;
@@ -227,6 +303,9 @@
 				LastUpgradeCheck = 1430;
 				ORGANIZATIONNAME = "";
 				TargetAttributes = {
+					4D29F84F2B4ADA2C0077EF51 = {
+						CreatedOnToolsVersion = 15.1;
+					};
 					4DE9F9C22B493A6E0015F780 = {
 						CreatedOnToolsVersion = 15.1;
 					};
@@ -251,11 +330,21 @@
 			targets = (
 				97C146ED1CF9000F007C117D /* Runner */,
 				4DE9F9C22B493A6E0015F780 /* Import_photo_action */,
+				4D29F84F2B4ADA2C0077EF51 /* Import_photo_action_flutter */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		4D29F84E2B4ADA2C0077EF51 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4D29F8542B4ADA2D0077EF51 /* Media.xcassets in Resources */,
+				4D29F8592B4ADA2D0077EF51 /* MainInterface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		4DE9F9C12B493A6E0015F780 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -313,6 +402,14 @@
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		4D29F84C2B4ADA2C0077EF51 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4D29F8562B4ADA2D0077EF51 /* ActionViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		4DE9F9BF2B493A6E0015F780 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -333,6 +430,11 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		4D29F85C2B4ADA2D0077EF51 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4D29F84F2B4ADA2C0077EF51 /* Import_photo_action_flutter */;
+			targetProxy = 4D29F85B2B4ADA2D0077EF51 /* PBXContainerItemProxy */;
+		};
 		4DE9F9D12B493A6E0015F780 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 4DE9F9C22B493A6E0015F780 /* Import_photo_action */;
@@ -341,6 +443,14 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
+		4D29F8572B4ADA2D0077EF51 /* MainInterface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4D29F8582B4ADA2D0077EF51 /* Base */,
+			);
+			name = MainInterface.storyboard;
+			sourceTree = "<group>";
+		};
 		4DE9F9CC2B493A6E0015F780 /* MainInterface.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -445,6 +555,126 @@
 				SWIFT_OBJC_BRIDGING_HEADER = "Runner/Runner-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				VERSIONING_SYSTEM = "apple-generic";
+			};
+			name = Profile;
+		};
+		4D29F85F2B4ADA2D0077EF51 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9740EEB21CF90195004384FC /* Debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIconExtension-iOS-Flutter";
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_ENTITLEMENTS = Import_photo_action_flutter/Import_photo_action_flutter.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = MGA58Y526H;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Import_photo_action_flutter/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = Import_photo_action_flutter;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MARKETING_VERSION = 1.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.lucas-goldner.goldenIosExtensions.Import-photo-action-flutter";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		4D29F8602B4ADA2D0077EF51 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7AFA3C8E1D35360C0083082E /* Release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIconExtension-iOS-Flutter";
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_ENTITLEMENTS = Import_photo_action_flutter/Import_photo_action_flutter.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = MGA58Y526H;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Import_photo_action_flutter/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = Import_photo_action_flutter;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MARKETING_VERSION = 1.0;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.lucas-goldner.goldenIosExtensions.Import-photo-action-flutter";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		4D29F8612B4ADA2D0077EF51 /* Profile */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7AFA3C8E1D35360C0083082E /* Release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIconExtension-iOS-Flutter";
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_ENTITLEMENTS = Import_photo_action_flutter/Import_photo_action_flutter.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = MGA58Y526H;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Import_photo_action_flutter/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = Import_photo_action_flutter;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MARKETING_VERSION = 1.0;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.lucas-goldner.goldenIosExtensions.Import-photo-action-flutter";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Profile;
 		};
@@ -742,6 +972,16 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		4D29F85E2B4ADA2D0077EF51 /* Build configuration list for PBXNativeTarget "Import_photo_action_flutter" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4D29F85F2B4ADA2D0077EF51 /* Debug */,
+				4D29F8602B4ADA2D0077EF51 /* Release */,
+				4D29F8612B4ADA2D0077EF51 /* Profile */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		4DE9F9D72B493A6E0015F780 /* Build configuration list for PBXNativeTarget "Import_photo_action" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
