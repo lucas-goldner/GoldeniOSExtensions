@@ -24,15 +24,13 @@ enum Extensions {
 }
 
 extension ExtensionsExtension on Extensions {
-  Widget buildWidgetWithData(Object? data) {
-    return switch (this) {
-      Extensions.action =>
-        ActionContent(data == null ? [] : data as List<ImportedFile>),
-      Extensions.autofill => const SizedBox.shrink(),
-      Extensions.callkit => const SizedBox.shrink(),
-      Extensions.widget => const SizedBox.shrink(),
-      Extensions.spotlight => const SizedBox.shrink(),
-      Extensions.appclip => const SizedBox.shrink()
-    };
-  }
+  Widget buildWidgetWithData(Object? data) => switch (this) {
+        Extensions.action =>
+          ActionContent(data == null ? [] : data as List<ImportedFile>),
+        Extensions.autofill => const SizedBox.shrink(),
+        Extensions.callkit => const SizedBox.shrink(),
+        Extensions.widget => const SizedBox.shrink(),
+        Extensions.spotlight => const SizedBox.shrink(),
+        Extensions.appclip => const SizedBox.shrink()
+      };
 }
