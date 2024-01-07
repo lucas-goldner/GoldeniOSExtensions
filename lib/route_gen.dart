@@ -11,6 +11,9 @@ class RouteGenerator {
     switch (settings.name) {
       case '/':
         return CupertinoPageRoute(builder: (_) => const ExtensionList());
+      case "/importFromFlutterAction":
+        return CupertinoPageRoute(
+            builder: (_) => const ExtensionPage(Extensions.action, null));
       default:
         final passedExtensionWithData =
             settings.arguments as (Extensions, Object?);
