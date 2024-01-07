@@ -1,6 +1,5 @@
 import 'package:flutter/cupertino.dart';
-import 'package:golden_ios_extensions/extension_page.dart';
-import 'package:golden_ios_extensions/extensions.dart';
+import 'package:golden_ios_extensions/extension_list.dart';
 import 'package:golden_ios_extensions/route_gen.dart';
 
 void main() {
@@ -13,7 +12,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) => CupertinoApp(
         debugShowCheckedModeBanner: false,
-        home: const ExtensionPage(Extensions.action),
+        home: const ExtensionList(),
         onGenerateRoute: (settings) => RouteGenerator.generateRoute(settings),
       );
 }

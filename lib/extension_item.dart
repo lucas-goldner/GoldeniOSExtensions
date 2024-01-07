@@ -3,15 +3,16 @@ import 'package:flutter/material.dart';
 import 'package:golden_ios_extensions/extensions.dart';
 
 class ExtensionItem extends StatelessWidget {
-  const ExtensionItem({required this.extension, super.key});
+  const ExtensionItem({required this.extension, this.data, super.key});
 
   final Extensions extension;
+  final Object? data;
 
   @override
   Widget build(BuildContext context) => GestureDetector(
         onTapDown: (_) => Navigator.of(context).pushNamed(
           '/${extension.name.toLowerCase()}',
-          arguments: extension,
+          arguments: (extension, data),
         ),
         child: DecoratedBox(
           decoration: BoxDecoration(

@@ -41,7 +41,6 @@ import Photos
     }
 }
 
-// MARK: - Event channel related
 extension AppDelegate: FlutterStreamHandler {
     public func onListen(withArguments arguments: Any?, eventSink events: @escaping FlutterEventSink) -> FlutterError? {
         if (arguments as! String? == "media") {

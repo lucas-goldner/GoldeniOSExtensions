@@ -12,8 +12,14 @@ class RouteGenerator {
       case '/':
         return CupertinoPageRoute(builder: (_) => const ExtensionList());
       default:
-        final extension = settings.arguments as Extensions;
-        return CupertinoPageRoute(builder: (_) => ExtensionPage(extension));
+        final passedExtensionWithData =
+            settings.arguments as (Extensions, Object?);
+        return CupertinoPageRoute(
+          builder: (_) => ExtensionPage(
+            passedExtensionWithData.$1,
+            passedExtensionWithData.$2,
+          ),
+        );
     }
   }
 }

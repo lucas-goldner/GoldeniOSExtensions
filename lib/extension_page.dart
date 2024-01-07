@@ -2,8 +2,9 @@ import 'package:flutter/cupertino.dart';
 import 'package:golden_ios_extensions/extensions.dart';
 
 class ExtensionPage extends StatelessWidget {
-  const ExtensionPage(this.extension, {super.key});
+  const ExtensionPage(this.extension, this.data, {super.key});
   final Extensions extension;
+  final Object? data;
 
   @override
   Widget build(BuildContext context) => CupertinoPageScaffold(
@@ -28,7 +29,7 @@ class ExtensionPage extends StatelessWidget {
                 const SizedBox(
                   height: 20,
                 ),
-                extension.content,
+                extension.buildWidgetWithData(data),
               ],
             ),
           ),

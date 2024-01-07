@@ -1,6 +1,7 @@
 import 'package:flutter/cupertino.dart';
 import 'package:golden_ios_extensions/extension_item.dart';
 import 'package:golden_ios_extensions/extensions.dart';
+import 'package:golden_ios_extensions/extensions/action/action_import_file_channel.dart';
 
 class ExtensionList extends StatefulWidget {
   const ExtensionList({super.key});
@@ -29,7 +30,22 @@ class _ExtensionListState extends State<ExtensionList> {
                 const SizedBox(
                   height: 20,
                 ),
-                for (final extension in Extensions.values)
+                StreamBuilder<List<ImportedFile>>(
+                  stream: ImportFileChannel().getMediaStream(),
+                  builder: (context, snapshot) {
+                    if (snapshot.hasData) {
+                      return ExtensionItem(
+                        extension: Extensions.action,
+                        data: snapshot.requireData,
+                      );
+                    }
+
+                    return const ExtensionItem(
+                      extension: Extensions.action,
+                    );
+                  },
+                ),
+                for (final extension in Extensions.values.skip(1))
                   ExtensionItem(
                     extension: extension,
                   ),
