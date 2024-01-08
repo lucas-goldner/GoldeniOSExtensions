@@ -1,11 +1,20 @@
+import 'dart:developer';
+
 import 'package:flutter/cupertino.dart';
+import 'package:flutter/services.dart';
 
 class ActionPageFromExtension extends StatelessWidget {
   const ActionPageFromExtension(this.imagePath, {super.key});
   final String imagePath;
+  static const platform =
+      MethodChannel('com.lucas-goldner.goldenIosExtensions/flutterImport');
 
-  void _importIntoApp() {
-    print("Importing into app...");
+  Future<void> importIntoApp() async {
+    try {
+      await platform.invokeMethod('openAppWithImagePath', imagePath);
+    } on PlatformException catch (e) {
+      log("Failed to print message: '${e.message}'.", level: 3);
+    }
   }
 
   @override
@@ -35,7 +44,7 @@ class ActionPageFromExtension extends StatelessWidget {
                   height: 20,
                 ),
                 CupertinoButton.filled(
-                  onPressed: _importIntoApp,
+                  onPressed: importIntoApp,
                   child: const Text("Import into app"),
                 ),
               ],
