@@ -10,9 +10,9 @@ import UIKit
 import UniformTypeIdentifiers
 
 class ActionViewController: UIViewController {
-    var hostAppBundleIdentifier = "com.lucas-goldner.goldenIosExtensions"
+    var hostAppBundleIdentifier = "com.lucas-goldner.golden-ios-extensions"
     let sharedKey = "ImportKey"
-    var appGroupId = "group.com.lucas-goldner.goldenIosExtensions"
+    var appGroupId = "group.com.lucas-goldner.golden-ios-extensions"
     var imageURL: URL?
     var importedMedia: [ImportedFile] = []
     

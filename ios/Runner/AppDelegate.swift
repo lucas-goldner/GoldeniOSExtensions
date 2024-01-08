@@ -5,7 +5,7 @@ import Photos
 @UIApplicationMain
 @objc class AppDelegate: FlutterAppDelegate {
     private var schemePrefix = "ImportMedia";
-    let kEventsChannelMedia: String = "com.lucas-goldner.goldenIosExtensions/import"
+    let kEventsChannelMedia: String = "com.lucas-goldner.golden-ios-extensions/import"
     
     public var initialMedia: [ImportedFile]? = nil
     public var latestMedia: [ImportedFile]? = nil

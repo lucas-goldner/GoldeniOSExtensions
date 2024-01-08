@@ -5,7 +5,7 @@ import 'package:flutter/services.dart';
 
 class ImportFileChannel {
   static const String _eventChannelName =
-      'com.lucas-goldner.goldenIosExtensions/import';
+      'com.lucas-goldner.golden-ios-extensions/import';
   static const EventChannel _eventChannel = EventChannel(_eventChannelName);
 
   Stream<List<ImportedFile>> getMediaStream() {

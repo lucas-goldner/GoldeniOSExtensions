@@ -4,7 +4,7 @@
 <dict>
 	<key>com.apple.security.application-groups</key>
 	<array>
-		<string>group.com.lucas-goldner.goldenIosExtensions</string>
+		<string>group.com.lucas-goldner.golden-ios-extensions</string>
 	</array>
 </dict>
 </plist>

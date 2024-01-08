@@ -4,9 +4,6 @@ import 'package:golden_ios_extensions/extension_page.dart';
 import 'package:golden_ios_extensions/extensions.dart';
 import 'package:golden_ios_extensions/extensions/action/action_page_from_extension.dart';
 
-// Link for opening the app from the action extension
-// ImportMedia-com.lucas-goldner.goldenIosExtensions://
-
 enum GoldenExtensionRoutes {
   initRoute("/"),
   importFromFlutterAction("/importFromFlutterAction");

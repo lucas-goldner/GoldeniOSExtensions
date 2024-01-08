@@ -7,7 +7,7 @@ class ActionPageFromExtension extends StatelessWidget {
   const ActionPageFromExtension(this.imagePath, {super.key});
   final String imagePath;
   static const platform =
-      MethodChannel('com.lucas-goldner.goldenIosExtensions/flutterImport');
+      MethodChannel('com.lucas-goldner.golden-ios-extensions/flutterImport');
 
   Future<void> importIntoApp() async {
     try {

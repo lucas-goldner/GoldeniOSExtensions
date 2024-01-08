@@ -11,9 +11,9 @@ import UniformTypeIdentifiers
 import Flutter
 
 class ActionViewController: UIViewController {
-    var hostAppBundleIdentifier = "com.lucas-goldner.goldenIosExtensions"
+    var hostAppBundleIdentifier = "com.lucas-goldner.golden-ios-extensions"
     let sharedKey = "ImportKey"
-    var appGroupId = "group.com.lucas-goldner.goldenIosExtensions"
+    var appGroupId = "group.com.lucas-goldner.golden-ios-extensions"
     var imageURL: URL?
     var importedMedia: [ImportedFile] = []
     
@@ -57,7 +57,7 @@ class ActionViewController: UIViewController {
     }
     
     func setupMethodChannel(controller: FlutterViewController) {
-        let channel = FlutterMethodChannel(name: "com.lucas-goldner.goldenIosExtensions/flutterImport", binaryMessenger: controller.binaryMessenger)
+        let channel = FlutterMethodChannel(name: "com.lucas-goldner.golden-ios-extensions/flutterImport", binaryMessenger: controller.binaryMessenger)
         channel.setMethodCallHandler { (call, result) in
             if call.method == "openAppWithImagePath" {
                 if let imagePath = call.arguments as? String {
