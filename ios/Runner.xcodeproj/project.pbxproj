@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 60;
+	objectVersion = 54;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -14,6 +14,9 @@
 		4D29F8562B4ADA2D0077EF51 /* ActionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D29F8552B4ADA2D0077EF51 /* ActionViewController.swift */; };
 		4D29F8592B4ADA2D0077EF51 /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4D29F8572B4ADA2D0077EF51 /* MainInterface.storyboard */; };
 		4D29F85D2B4ADA2D0077EF51 /* Import_photo_action_flutter.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 4D29F8502B4ADA2C0077EF51 /* Import_photo_action_flutter.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		4D69DA8E2BD31B730011397E /* ShareViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D69DA8D2BD31B730011397E /* ShareViewController.swift */; };
+		4D69DA912BD31B730011397E /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4D69DA8F2BD31B730011397E /* MainInterface.storyboard */; };
+		4D69DA952BD31B730011397E /* share-to-app-extension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 4D69DA8B2BD31B730011397E /* share-to-app-extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		4D6EB98A2B4C453400FCA343 /* Flutter.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4D29F8482B4AD7E50077EF51 /* Flutter.xcframework */; };
 		4D6EB98B2B4C453400FCA343 /* Flutter.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 4D29F8482B4AD7E50077EF51 /* Flutter.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		4DE9F9C62B493A6E0015F780 /* UniformTypeIdentifiers.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4DE9F9C52B493A6E0015F780 /* UniformTypeIdentifiers.framework */; };
@@ -34,6 +37,13 @@
 			proxyType = 1;
 			remoteGlobalIDString = 4D29F84F2B4ADA2C0077EF51;
 			remoteInfo = Import_photo_action_flutter;
+		};
+		4D69DA932BD31B730011397E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 97C146E61CF9000F007C117D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4D69DA8A2BD31B730011397E;
+			remoteInfo = "share-to-app-extension";
 		};
 		4DE9F9D02B493A6E0015F780 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -64,6 +74,7 @@
 			files = (
 				4DE9F9D22B493A6E0015F780 /* Import_photo_action.appex in Embed Foundation Extensions */,
 				4D29F85D2B4ADA2D0077EF51 /* Import_photo_action_flutter.appex in Embed Foundation Extensions */,
+				4D69DA952BD31B730011397E /* share-to-app-extension.appex in Embed Foundation Extensions */,
 			);
 			name = "Embed Foundation Extensions";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -92,6 +103,11 @@
 		4D29F8582B4ADA2D0077EF51 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
 		4D29F85A2B4ADA2D0077EF51 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4D29F8622B4ADACF0077EF51 /* Import_photo_action_flutter.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Import_photo_action_flutter.entitlements; sourceTree = "<group>"; };
+		4D69DA8B2BD31B730011397E /* share-to-app-extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "share-to-app-extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		4D69DA8D2BD31B730011397E /* ShareViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShareViewController.swift; sourceTree = "<group>"; };
+		4D69DA902BD31B730011397E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
+		4D69DA922BD31B730011397E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4D69DA9A2BD332270011397E /* share-to-app-extension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "share-to-app-extension.entitlements"; sourceTree = "<group>"; };
 		4DE9F9C32B493A6E0015F780 /* Import_photo_action.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = Import_photo_action.appex; sourceTree = BUILT_PRODUCTS_DIR; };
 		4DE9F9C52B493A6E0015F780 /* UniformTypeIdentifiers.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UniformTypeIdentifiers.framework; path = System/Library/Frameworks/UniformTypeIdentifiers.framework; sourceTree = SDKROOT; };
 		4DE9F9C82B493A6E0015F780 /* Media.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Media.xcassets; sourceTree = "<group>"; };
@@ -119,6 +135,13 @@
 			files = (
 				4D6EB98A2B4C453400FCA343 /* Flutter.xcframework in Frameworks */,
 				4D29F8512B4ADA2D0077EF51 /* UniformTypeIdentifiers.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4D69DA882BD31B730011397E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -160,6 +183,17 @@
 			path = Import_photo_action_flutter;
 			sourceTree = "<group>";
 		};
+		4D69DA8C2BD31B730011397E /* share-to-app-extension */ = {
+			isa = PBXGroup;
+			children = (
+				4D69DA9A2BD332270011397E /* share-to-app-extension.entitlements */,
+				4D69DA8D2BD31B730011397E /* ShareViewController.swift */,
+				4D69DA8F2BD31B730011397E /* MainInterface.storyboard */,
+				4D69DA922BD31B730011397E /* Info.plist */,
+			);
+			path = "share-to-app-extension";
+			sourceTree = "<group>";
+		};
 		4DE9F9C42B493A6E0015F780 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -199,6 +233,7 @@
 				97C146F01CF9000F007C117D /* Runner */,
 				4DE9F9C72B493A6E0015F780 /* Import_photo_action */,
 				4D29F8522B4ADA2D0077EF51 /* Import_photo_action_flutter */,
+				4D69DA8C2BD31B730011397E /* share-to-app-extension */,
 				4DE9F9C42B493A6E0015F780 /* Frameworks */,
 				97C146EF1CF9000F007C117D /* Products */,
 				331C8082294A63A400263BE5 /* RunnerTests */,
@@ -211,6 +246,7 @@
 				97C146EE1CF9000F007C117D /* Runner.app */,
 				4DE9F9C32B493A6E0015F780 /* Import_photo_action.appex */,
 				4D29F8502B4ADA2C0077EF51 /* Import_photo_action_flutter.appex */,
+				4D69DA8B2BD31B730011397E /* share-to-app-extension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -252,6 +288,23 @@
 			productReference = 4D29F8502B4ADA2C0077EF51 /* Import_photo_action_flutter.appex */;
 			productType = "com.apple.product-type.app-extension";
 		};
+		4D69DA8A2BD31B730011397E /* share-to-app-extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4D69DA962BD31B730011397E /* Build configuration list for PBXNativeTarget "share-to-app-extension" */;
+			buildPhases = (
+				4D69DA872BD31B730011397E /* Sources */,
+				4D69DA882BD31B730011397E /* Frameworks */,
+				4D69DA892BD31B730011397E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "share-to-app-extension";
+			productName = "share-to-app-extension";
+			productReference = 4D69DA8B2BD31B730011397E /* share-to-app-extension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 		4DE9F9C22B493A6E0015F780 /* Import_photo_action */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 4DE9F9D72B493A6E0015F780 /* Build configuration list for PBXNativeTarget "Import_photo_action" */;
@@ -286,6 +339,7 @@
 			dependencies = (
 				4DE9F9D12B493A6E0015F780 /* PBXTargetDependency */,
 				4D29F85C2B4ADA2D0077EF51 /* PBXTargetDependency */,
+				4D69DA942BD31B730011397E /* PBXTargetDependency */,
 			);
 			name = Runner;
 			productName = Runner;
@@ -300,10 +354,13 @@
 			attributes = {
 				BuildIndependentTargetsInParallel = YES;
 				LastSwiftUpdateCheck = 1510;
-				LastUpgradeCheck = 1430;
+				LastUpgradeCheck = 1510;
 				ORGANIZATIONNAME = "";
 				TargetAttributes = {
 					4D29F84F2B4ADA2C0077EF51 = {
+						CreatedOnToolsVersion = 15.1;
+					};
+					4D69DA8A2BD31B730011397E = {
 						CreatedOnToolsVersion = 15.1;
 					};
 					4DE9F9C22B493A6E0015F780 = {
@@ -331,6 +388,7 @@
 				97C146ED1CF9000F007C117D /* Runner */,
 				4DE9F9C22B493A6E0015F780 /* Import_photo_action */,
 				4D29F84F2B4ADA2C0077EF51 /* Import_photo_action_flutter */,
+				4D69DA8A2BD31B730011397E /* share-to-app-extension */,
 			);
 		};
 /* End PBXProject section */
@@ -342,6 +400,14 @@
 			files = (
 				4D29F8542B4ADA2D0077EF51 /* Media.xcassets in Resources */,
 				4D29F8592B4ADA2D0077EF51 /* MainInterface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4D69DA892BD31B730011397E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4D69DA912BD31B730011397E /* MainInterface.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -410,6 +476,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		4D69DA872BD31B730011397E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4D69DA8E2BD31B730011397E /* ShareViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		4DE9F9BF2B493A6E0015F780 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -435,6 +509,11 @@
 			target = 4D29F84F2B4ADA2C0077EF51 /* Import_photo_action_flutter */;
 			targetProxy = 4D29F85B2B4ADA2D0077EF51 /* PBXContainerItemProxy */;
 		};
+		4D69DA942BD31B730011397E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4D69DA8A2BD31B730011397E /* share-to-app-extension */;
+			targetProxy = 4D69DA932BD31B730011397E /* PBXContainerItemProxy */;
+		};
 		4DE9F9D12B493A6E0015F780 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 4DE9F9C22B493A6E0015F780 /* Import_photo_action */;
@@ -447,6 +526,14 @@
 			isa = PBXVariantGroup;
 			children = (
 				4D29F8582B4ADA2D0077EF51 /* Base */,
+			);
+			name = MainInterface.storyboard;
+			sourceTree = "<group>";
+		};
+		4D69DA8F2BD31B730011397E /* MainInterface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4D69DA902BD31B730011397E /* Base */,
 			);
 			name = MainInterface.storyboard;
 			sourceTree = "<group>";
@@ -673,6 +760,120 @@
 				MARKETING_VERSION = 1.0;
 				MTL_FAST_MATH = YES;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.lucas-goldner.golden-ios-extensions.Import-photo-action-flutter";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Profile;
+		};
+		4D69DA972BD31B730011397E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_ENTITLEMENTS = "share-to-app-extension/share-to-app-extension.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = MGA58Y526H;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "share-to-app-extension/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "share-to-app-extension";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MARKETING_VERSION = 1.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.lucas-goldner.golden-ios-extensions.share-to-app-extension";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		4D69DA982BD31B730011397E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_ENTITLEMENTS = "share-to-app-extension/share-to-app-extension.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = MGA58Y526H;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "share-to-app-extension/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "share-to-app-extension";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MARKETING_VERSION = 1.0;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.lucas-goldner.golden-ios-extensions.share-to-app-extension";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		4D69DA992BD31B730011397E /* Profile */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_ENTITLEMENTS = "share-to-app-extension/share-to-app-extension.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = MGA58Y526H;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "share-to-app-extension/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "share-to-app-extension";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MARKETING_VERSION = 1.0;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.lucas-goldner.golden-ios-extensions.share-to-app-extension";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -981,6 +1182,16 @@
 				4D29F85F2B4ADA2D0077EF51 /* Debug */,
 				4D29F8602B4ADA2D0077EF51 /* Release */,
 				4D29F8612B4ADA2D0077EF51 /* Profile */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4D69DA962BD31B730011397E /* Build configuration list for PBXNativeTarget "share-to-app-extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4D69DA972BD31B730011397E /* Debug */,
+				4D69DA982BD31B730011397E /* Release */,
+				4D69DA992BD31B730011397E /* Profile */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

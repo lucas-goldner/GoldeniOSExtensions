@@ -1,6 +1,7 @@
 import 'package:flutter/cupertino.dart';
 import 'package:golden_ios_extensions/extensions/action/action_content.dart';
 import 'package:golden_ios_extensions/extensions/action/action_import_file_channel.dart';
+import 'package:golden_ios_extensions/extensions/share/share_content.dart';
 
 enum Extensions {
   action(
@@ -12,7 +13,11 @@ enum Extensions {
   callkit("Callkit", description: ""),
   widget("Widget", description: ""),
   spotlight("Spotlight", description: ""),
-  appclip("Appclip", description: "");
+  appclip("Appclip", description: ""),
+  share(
+    "Share",
+    description: "Lets users share certain content into your app.",
+  );
 
   const Extensions(
     this.name, {
@@ -27,6 +32,8 @@ extension ExtensionsExtension on Extensions {
   Widget buildWidgetWithData(Object? data) => switch (this) {
         Extensions.action =>
           ActionContent(data == null ? [] : data as List<ImportedFile>),
+        Extensions.share =>
+          ShareContent(data == null ? null : data as (String, String)),
         Extensions.autofill => const SizedBox.shrink(),
         Extensions.callkit => const SizedBox.shrink(),
         Extensions.widget => const SizedBox.shrink(),

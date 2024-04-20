@@ -34,7 +34,14 @@
 					<string>ImportMedia-$(PRODUCT_BUNDLE_IDENTIFIER)</string>
 				</array>
 			</dict>
-			<dict/>
+			<dict>
+				<key>CFBundleTypeRole</key>
+				<string>Editor</string>
+				<key>CFBundleURLSchemes</key>
+				<array>
+					<string>ShareLink-$(PRODUCT_BUNDLE_IDENTIFIER)</string>
+				</array>
+			</dict>
 		</array>
 		<key>CFBundleVersion</key>
 		<string>$(FLUTTER_BUILD_NUMBER)</string>

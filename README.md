@@ -28,7 +28,7 @@ An overview over all extensions can be seen [here!](https://developer.apple.com/
 | Persistent Token                 | Grant access to user accounts and the keychain using a token.                                       | ❌         |          |
 | Photo Editing                    | Allow your app to edit assets directly within the Photos app.                                       | ❌         |          |
 | Quick Look Preview               | Provide previews of documents your app owns so they can be viewed in any app.                       | ❌         |          |
-| Share                            | Let users post to your social-network service from any app.                                         | ❌         |          |
+| Share                            | Let users post to your social-network service from any app.                                         | ✅          | Currently only using UIKit         |
 | Spotlight Import                 | Make content in your app searchable in Spotlight, Safari, Siri, and more.                          | ❌         |          |
 | Sticker Pack                     | Add custom stickers to Messages.                                                                    | ❌         |          |
 | Thumbnail                        | Display thumbnails of your custom document types in all apps.                                       | ❌         |          |
