@@ -4,11 +4,12 @@ import 'package:golden_ios_extensions/extension_page.dart';
 import 'package:golden_ios_extensions/extensions.dart';
 import 'package:golden_ios_extensions/extensions/action/action_page_from_extension.dart';
 import 'package:golden_ios_extensions/extensions/share/share_extension_path_format.dart';
+import 'package:golden_ios_extensions/extensions/share/share_page_from_extension.dart';
 
 enum GoldenExtensionRoutes {
   initRoute("/"),
   importFromFlutterAction("/importFromFlutterAction"),
-  sharedExtension("/sharedExtension");
+  sharedExtension("/shareLinkFlutterShare");
 
   const GoldenExtensionRoutes(this.path);
   final String path;
@@ -34,6 +35,9 @@ class RouteGenerator {
         return CupertinoPageRoute(
             builder: (_) =>
                 ActionPageFromExtension(removePrefix(settings.name ?? "")));
+      case String s when s.contains(GoldenExtensionRoutes.sharedExtension.path):
+        return CupertinoPageRoute(
+            builder: (_) => const SharePageFromExtension());
       case String s when isSharedExtensionPath(s):
         return CupertinoPageRoute(
           builder: (_) => ExtensionPage(

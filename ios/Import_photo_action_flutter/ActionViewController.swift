@@ -48,7 +48,6 @@ class ActionViewController: UIViewController {
     
     
     func showFlutter(imageURL: String) {
-        print(imageURL)
         let flutterViewController = FlutterViewController(project: nil, initialRoute: "/importFromFlutterAction\(imageURL)", nibName: nil, bundle: nil)
         addChild(flutterViewController)
         view.addSubview(flutterViewController.view)

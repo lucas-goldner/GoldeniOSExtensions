@@ -8,7 +8,7 @@ An overview over all extensions can be seen [here!](https://developer.apple.com/
 
 | Extension Point                  | Description                                                                                          | Implemented | Comments |
 |----------------------------------|------------------------------------------------------------------------------------------------------|-------------|----------|
-| Action                           | Add custom actions to the share sheet to invoke your app’s functionality from any app.               | ✅         | ![Action](docs/assets/action.webp)<br/>Actually 2 versions are implemented one using a storyboard and another one using a custom Flutter view         |
+| Action                           | Add custom actions to the share sheet to invoke your app’s functionality from any app.               | ✅         | ![Action](docs/assets/action.webp)<br/>2 versions are implemented one using a storyboard and another one using a custom Flutter view         |
 | Audio Unit                       | Create and modify audio in any app that uses sound, including music production apps such as GarageBand or Logic Pro X. | ❌         |          |
 | Authentication Services          | Streamline authentication for users by enabling single sign-on.                                      | ❌         |          |
 | AutoFill Credential Provider     | Surface credentials from your app in Password Autofill and pull your app’s password data into the Password AutoFill workflow. | ❌         |          |
@@ -28,9 +28,17 @@ An overview over all extensions can be seen [here!](https://developer.apple.com/
 | Persistent Token                 | Grant access to user accounts and the keychain using a token.                                       | ❌         |          |
 | Photo Editing                    | Allow your app to edit assets directly within the Photos app.                                       | ❌         |          |
 | Quick Look Preview               | Provide previews of documents your app owns so they can be viewed in any app.                       | ❌         |          |
-| Share                            | Let users post to your social-network service from any app.                                         | ✅          | Currently only using UIKit         |
+| Share                            | Let users post to your social-network service from any app.                                         | ✅          | ![Action](docs/assets/share_extensions.webp)<br/>2 versions are implemented one using a storyboard and another one using a custom Flutter view           |
 | Spotlight Import                 | Make content in your app searchable in Spotlight, Safari, Siri, and more.                          | ❌         |          |
 | Sticker Pack                     | Add custom stickers to Messages.                                                                    | ❌         |          |
 | Thumbnail                        | Display thumbnails of your custom document types in all apps.                                       | ❌         |          |
 | Virtual Conference               | Integrate your video conferencing service directly into events on user’s calendars.                 | ❌         |          |
 | Widgets                          | Show relevant, glanceable content from your app on the iOS Home Screen and Lock Screen, macOS Notification Center, and as complications in watchOS. | ❌         |          |
+
+## Potential issue
+
+According to the [documentation](https://docs.flutter.dev/platform-integration/ios/app-extensions), when using the flutter versions of the extensions, then you might run into this out of memory error:
+
+![Action](docs/assets/memory_issue.webp)
+
+The reason for that is, due to the memory limitations of app extensions, use Flutter to build an app extension UI for extension types that have memory limits larger than 100MB. For example, Share extensions have a 120MB memory limit. In addition, Flutter uses extra memory in debug mode. Therefore, Flutter doesn't fully support running app extensions in debug mode on physical devices when used to build extension UI; it might run out of memory. As an alternative, use an iOS simulator to test your extension in debug mode.

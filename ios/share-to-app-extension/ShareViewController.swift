@@ -11,7 +11,6 @@ import UIKit
 import UniformTypeIdentifiers
 
 class ShareViewController: UIViewController {
-    var appGroupId = "group.com.lucas-goldner.golden-ios-extensions"
     var hostAppBundleIdentifier = "com.lucas-goldner.golden-ios-extensions"
     @IBOutlet var descriptionTextField: UITextField!
     
