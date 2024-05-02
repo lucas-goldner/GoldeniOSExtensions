@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 54;
+	objectVersion = 60;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -22,6 +22,14 @@
 		4D69DAA92BD44F360011397E /* share-to-app-extension_flutter.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 4D69DA9F2BD44F360011397E /* share-to-app-extension_flutter.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		4D69DAB12BD465D30011397E /* Flutter.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4D29F8482B4AD7E50077EF51 /* Flutter.xcframework */; };
 		4D69DAB22BD465D30011397E /* Flutter.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 4D29F8482B4AD7E50077EF51 /* Flutter.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		4D69DB0E2BE4370C0011397E /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4D69DB0D2BE4370C0011397E /* WidgetKit.framework */; };
+		4D69DB102BE4370C0011397E /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4D69DB0F2BE4370C0011397E /* SwiftUI.framework */; };
+		4D69DB132BE4370C0011397E /* PostswidgetBundle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D69DB122BE4370C0011397E /* PostswidgetBundle.swift */; };
+		4D69DB152BE4370C0011397E /* PostswidgetLiveActivity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D69DB142BE4370C0011397E /* PostswidgetLiveActivity.swift */; };
+		4D69DB172BE4370C0011397E /* Postswidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D69DB162BE4370C0011397E /* Postswidget.swift */; };
+		4D69DB192BE4370C0011397E /* AppIntent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D69DB182BE4370C0011397E /* AppIntent.swift */; };
+		4D69DB1B2BE4370F0011397E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4D69DB1A2BE4370F0011397E /* Assets.xcassets */; };
+		4D69DB1F2BE4370F0011397E /* PostswidgetExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 4D69DB0C2BE4370C0011397E /* PostswidgetExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		4D6EB98A2B4C453400FCA343 /* Flutter.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4D29F8482B4AD7E50077EF51 /* Flutter.xcframework */; };
 		4D6EB98B2B4C453400FCA343 /* Flutter.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 4D29F8482B4AD7E50077EF51 /* Flutter.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		4DE9F9C62B493A6E0015F780 /* UniformTypeIdentifiers.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4DE9F9C52B493A6E0015F780 /* UniformTypeIdentifiers.framework */; };
@@ -33,6 +41,7 @@
 		97C146FC1CF9000F007C117D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 97C146FA1CF9000F007C117D /* Main.storyboard */; };
 		97C146FE1CF9000F007C117D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 97C146FD1CF9000F007C117D /* Assets.xcassets */; };
 		97C147011CF9000F007C117D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 97C146FF1CF9000F007C117D /* LaunchScreen.storyboard */; };
+		FE09FB33C5222678E0F48638 /* Pods_Runner.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 45E36F5203BCB1CF2C4DC113 /* Pods_Runner.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,6 +65,13 @@
 			proxyType = 1;
 			remoteGlobalIDString = 4D69DA9E2BD44F360011397E;
 			remoteInfo = "share-to-app-extension_flutter";
+		};
+		4D69DB1D2BE4370F0011397E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 97C146E61CF9000F007C117D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4D69DB0B2BE4370C0011397E;
+			remoteInfo = PostswidgetExtension;
 		};
 		4DE9F9D02B493A6E0015F780 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -98,6 +114,7 @@
 				4D69DAA92BD44F360011397E /* share-to-app-extension_flutter.appex in Embed Foundation Extensions */,
 				4DE9F9D22B493A6E0015F780 /* Import_photo_action.appex in Embed Foundation Extensions */,
 				4D29F85D2B4ADA2D0077EF51 /* Import_photo_action_flutter.appex in Embed Foundation Extensions */,
+				4D69DB1F2BE4370F0011397E /* PostswidgetExtension.appex in Embed Foundation Extensions */,
 				4D69DA952BD31B730011397E /* share-to-app-extension.appex in Embed Foundation Extensions */,
 			);
 			name = "Embed Foundation Extensions";
@@ -120,6 +137,7 @@
 		1498D2331E8E89220040F4C2 /* GeneratedPluginRegistrant.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GeneratedPluginRegistrant.m; sourceTree = "<group>"; };
 		331C807B294A618700263BE5 /* RunnerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RunnerTests.swift; sourceTree = "<group>"; };
 		3B3967151E833CAA004F5970 /* AppFrameworkInfo.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = AppFrameworkInfo.plist; path = Flutter/AppFrameworkInfo.plist; sourceTree = "<group>"; };
+		45E36F5203BCB1CF2C4DC113 /* Pods_Runner.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Runner.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4D29F8482B4AD7E50077EF51 /* Flutter.xcframework */ = {isa = PBXFileReference; expectedSignature = "AppleDeveloperProgram:S8QB4VV633:FLUTTER.IO LLC"; lastKnownFileType = wrapper.xcframework; name = Flutter.xcframework; path = ../../../SDKs/flutter/bin/cache/artifacts/engine/ios/extension_safe/Flutter.xcframework; sourceTree = "<group>"; };
 		4D29F8502B4ADA2C0077EF51 /* Import_photo_action_flutter.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = Import_photo_action_flutter.appex; sourceTree = BUILT_PRODUCTS_DIR; };
 		4D29F8532B4ADA2D0077EF51 /* Media.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Media.xcassets; sourceTree = "<group>"; };
@@ -135,6 +153,16 @@
 		4D69DAA12BD44F360011397E /* ShareViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShareViewController.swift; sourceTree = "<group>"; };
 		4D69DAA42BD44F360011397E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
 		4D69DAA62BD44F360011397E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4D69DB0C2BE4370C0011397E /* PostswidgetExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = PostswidgetExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		4D69DB0D2BE4370C0011397E /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
+		4D69DB0F2BE4370C0011397E /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
+		4D69DB122BE4370C0011397E /* PostswidgetBundle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostswidgetBundle.swift; sourceTree = "<group>"; };
+		4D69DB142BE4370C0011397E /* PostswidgetLiveActivity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostswidgetLiveActivity.swift; sourceTree = "<group>"; };
+		4D69DB162BE4370C0011397E /* Postswidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Postswidget.swift; sourceTree = "<group>"; };
+		4D69DB182BE4370C0011397E /* AppIntent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppIntent.swift; sourceTree = "<group>"; };
+		4D69DB1A2BE4370F0011397E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		4D69DB1C2BE4370F0011397E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4D69DB242BE438040011397E /* PostswidgetExtension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = PostswidgetExtension.entitlements; sourceTree = "<group>"; };
 		4DE9F9C32B493A6E0015F780 /* Import_photo_action.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = Import_photo_action.appex; sourceTree = BUILT_PRODUCTS_DIR; };
 		4DE9F9C52B493A6E0015F780 /* UniformTypeIdentifiers.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UniformTypeIdentifiers.framework; path = System/Library/Frameworks/UniformTypeIdentifiers.framework; sourceTree = SDKROOT; };
 		4DE9F9C82B493A6E0015F780 /* Media.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Media.xcassets; sourceTree = "<group>"; };
@@ -146,6 +174,8 @@
 		74858FAD1ED2DC5600515810 /* Runner-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Runner-Bridging-Header.h"; sourceTree = "<group>"; };
 		74858FAE1ED2DC5600515810 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7AFA3C8E1D35360C0083082E /* Release.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; name = Release.xcconfig; path = Flutter/Release.xcconfig; sourceTree = "<group>"; };
+		8C67F2B5FBBAFE09D9DE6F5B /* Pods-Runner.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Runner.release.xcconfig"; path = "Target Support Files/Pods-Runner/Pods-Runner.release.xcconfig"; sourceTree = "<group>"; };
+		8D29914E47CD106C0BC73714 /* Pods-Runner.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Runner.debug.xcconfig"; path = "Target Support Files/Pods-Runner/Pods-Runner.debug.xcconfig"; sourceTree = "<group>"; };
 		9740EEB21CF90195004384FC /* Debug.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; name = Debug.xcconfig; path = Flutter/Debug.xcconfig; sourceTree = "<group>"; };
 		9740EEB31CF90195004384FC /* Generated.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; name = Generated.xcconfig; path = Flutter/Generated.xcconfig; sourceTree = "<group>"; };
 		97C146EE1CF9000F007C117D /* Runner.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Runner.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -153,6 +183,7 @@
 		97C146FD1CF9000F007C117D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		97C147001CF9000F007C117D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		97C147021CF9000F007C117D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E8FA83E627B1C395F73F5762 /* Pods-Runner.profile.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Runner.profile.xcconfig"; path = "Target Support Files/Pods-Runner/Pods-Runner.profile.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -180,6 +211,15 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		4D69DB092BE4370C0011397E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4D69DB102BE4370C0011397E /* SwiftUI.framework in Frameworks */,
+				4D69DB0E2BE4370C0011397E /* WidgetKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		4DE9F9C02B493A6E0015F780 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -192,6 +232,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FE09FB33C5222678E0F48638 /* Pods_Runner.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -238,11 +279,27 @@
 			path = "share-to-app-extension_flutter";
 			sourceTree = "<group>";
 		};
+		4D69DB112BE4370C0011397E /* Postswidget */ = {
+			isa = PBXGroup;
+			children = (
+				4D69DB122BE4370C0011397E /* PostswidgetBundle.swift */,
+				4D69DB142BE4370C0011397E /* PostswidgetLiveActivity.swift */,
+				4D69DB162BE4370C0011397E /* Postswidget.swift */,
+				4D69DB182BE4370C0011397E /* AppIntent.swift */,
+				4D69DB1A2BE4370F0011397E /* Assets.xcassets */,
+				4D69DB1C2BE4370F0011397E /* Info.plist */,
+			);
+			path = Postswidget;
+			sourceTree = "<group>";
+		};
 		4DE9F9C42B493A6E0015F780 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
 				4D29F8482B4AD7E50077EF51 /* Flutter.xcframework */,
 				4DE9F9C52B493A6E0015F780 /* UniformTypeIdentifiers.framework */,
+				45E36F5203BCB1CF2C4DC113 /* Pods_Runner.framework */,
+				4D69DB0D2BE4370C0011397E /* WidgetKit.framework */,
+				4D69DB0F2BE4370C0011397E /* SwiftUI.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -273,15 +330,18 @@
 		97C146E51CF9000F007C117D = {
 			isa = PBXGroup;
 			children = (
+				4D69DB242BE438040011397E /* PostswidgetExtension.entitlements */,
 				9740EEB11CF90186004384FC /* Flutter */,
 				97C146F01CF9000F007C117D /* Runner */,
 				4DE9F9C72B493A6E0015F780 /* Import_photo_action */,
 				4D29F8522B4ADA2D0077EF51 /* Import_photo_action_flutter */,
 				4D69DA8C2BD31B730011397E /* share-to-app-extension */,
 				4D69DAA02BD44F360011397E /* share-to-app-extension_flutter */,
+				4D69DB112BE4370C0011397E /* Postswidget */,
 				4DE9F9C42B493A6E0015F780 /* Frameworks */,
 				97C146EF1CF9000F007C117D /* Products */,
 				331C8082294A63A400263BE5 /* RunnerTests */,
+				D999CAB755BC6523CB8E0009 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -293,6 +353,7 @@
 				4D29F8502B4ADA2C0077EF51 /* Import_photo_action_flutter.appex */,
 				4D69DA8B2BD31B730011397E /* share-to-app-extension.appex */,
 				4D69DA9F2BD44F360011397E /* share-to-app-extension_flutter.appex */,
+				4D69DB0C2BE4370C0011397E /* PostswidgetExtension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -311,6 +372,16 @@
 				74858FAD1ED2DC5600515810 /* Runner-Bridging-Header.h */,
 			);
 			path = Runner;
+			sourceTree = "<group>";
+		};
+		D999CAB755BC6523CB8E0009 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				8D29914E47CD106C0BC73714 /* Pods-Runner.debug.xcconfig */,
+				8C67F2B5FBBAFE09D9DE6F5B /* Pods-Runner.release.xcconfig */,
+				E8FA83E627B1C395F73F5762 /* Pods-Runner.profile.xcconfig */,
+			);
+			path = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -369,6 +440,23 @@
 			productReference = 4D69DA9F2BD44F360011397E /* share-to-app-extension_flutter.appex */;
 			productType = "com.apple.product-type.app-extension";
 		};
+		4D69DB0B2BE4370C0011397E /* PostswidgetExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4D69DB232BE4370F0011397E /* Build configuration list for PBXNativeTarget "PostswidgetExtension" */;
+			buildPhases = (
+				4D69DB082BE4370C0011397E /* Sources */,
+				4D69DB092BE4370C0011397E /* Frameworks */,
+				4D69DB0A2BE4370C0011397E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PostswidgetExtension;
+			productName = PostswidgetExtension;
+			productReference = 4D69DB0C2BE4370C0011397E /* PostswidgetExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 		4DE9F9C22B493A6E0015F780 /* Import_photo_action */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 4DE9F9D72B493A6E0015F780 /* Build configuration list for PBXNativeTarget "Import_photo_action" */;
@@ -390,6 +478,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 97C147051CF9000F007C117D /* Build configuration list for PBXNativeTarget "Runner" */;
 			buildPhases = (
+				B6636A6C9BDE9FCED1E1003B /* [CP] Check Pods Manifest.lock */,
 				4DE9F9D32B493A6E0015F780 /* Embed Foundation Extensions */,
 				9740EEB61CF901F6004384FC /* Run Script */,
 				97C146EA1CF9000F007C117D /* Sources */,
@@ -397,6 +486,7 @@
 				97C146EC1CF9000F007C117D /* Resources */,
 				9705A1C41CF9048500538489 /* Embed Frameworks */,
 				3B06AD1E1E4923F5004D2608 /* Thin Binary */,
+				2A9CEE7A7CA2858C9FBF6A1E /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -405,6 +495,7 @@
 				4D29F85C2B4ADA2D0077EF51 /* PBXTargetDependency */,
 				4D69DA942BD31B730011397E /* PBXTargetDependency */,
 				4D69DAA82BD44F360011397E /* PBXTargetDependency */,
+				4D69DB1E2BE4370F0011397E /* PBXTargetDependency */,
 			);
 			name = Runner;
 			productName = Runner;
@@ -429,6 +520,9 @@
 						CreatedOnToolsVersion = 15.1;
 					};
 					4D69DA9E2BD44F360011397E = {
+						CreatedOnToolsVersion = 15.1;
+					};
+					4D69DB0B2BE4370C0011397E = {
 						CreatedOnToolsVersion = 15.1;
 					};
 					4DE9F9C22B493A6E0015F780 = {
@@ -458,6 +552,7 @@
 				4D29F84F2B4ADA2C0077EF51 /* Import_photo_action_flutter */,
 				4D69DA8A2BD31B730011397E /* share-to-app-extension */,
 				4D69DA9E2BD44F360011397E /* share-to-app-extension_flutter */,
+				4D69DB0B2BE4370C0011397E /* PostswidgetExtension */,
 			);
 		};
 /* End PBXProject section */
@@ -488,6 +583,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		4D69DB0A2BE4370C0011397E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4D69DB1B2BE4370F0011397E /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		4DE9F9C12B493A6E0015F780 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -511,6 +614,23 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		2A9CEE7A7CA2858C9FBF6A1E /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Runner/Pods-Runner-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Runner/Pods-Runner-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Runner/Pods-Runner-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		3B06AD1E1E4923F5004D2608 /* Thin Binary */ = {
 			isa = PBXShellScriptBuildPhase;
 			alwaysOutOfDate = 1;
@@ -542,6 +662,28 @@
 			shellPath = /bin/sh;
 			shellScript = "/bin/sh \"$FLUTTER_ROOT/packages/flutter_tools/bin/xcode_backend.sh\" build";
 		};
+		B6636A6C9BDE9FCED1E1003B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Runner-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -566,6 +708,17 @@
 			buildActionMask = 2147483647;
 			files = (
 				4D69DAA22BD44F360011397E /* ShareViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4D69DB082BE4370C0011397E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4D69DB152BE4370C0011397E /* PostswidgetLiveActivity.swift in Sources */,
+				4D69DB192BE4370C0011397E /* AppIntent.swift in Sources */,
+				4D69DB132BE4370C0011397E /* PostswidgetBundle.swift in Sources */,
+				4D69DB172BE4370C0011397E /* Postswidget.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -603,6 +756,11 @@
 			isa = PBXTargetDependency;
 			target = 4D69DA9E2BD44F360011397E /* share-to-app-extension_flutter */;
 			targetProxy = 4D69DAA72BD44F360011397E /* PBXContainerItemProxy */;
+		};
+		4D69DB1E2BE4370F0011397E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4D69DB0B2BE4370C0011397E /* PostswidgetExtension */;
+			targetProxy = 4D69DB1D2BE4370F0011397E /* PBXContainerItemProxy */;
 		};
 		4DE9F9D12B493A6E0015F780 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
@@ -1094,6 +1252,126 @@
 			};
 			name = Profile;
 		};
+		4D69DB202BE4370F0011397E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_ENTITLEMENTS = PostswidgetExtension.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = MGA58Y526H;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Postswidget/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = Postswidget;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MARKETING_VERSION = 1.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.lucas-goldner.golden-ios-extensions.Postswidget";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		4D69DB212BE4370F0011397E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_ENTITLEMENTS = PostswidgetExtension.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = MGA58Y526H;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Postswidget/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = Postswidget;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MARKETING_VERSION = 1.0;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.lucas-goldner.golden-ios-extensions.Postswidget";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		4D69DB222BE4370F0011397E /* Profile */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_ENTITLEMENTS = PostswidgetExtension.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = MGA58Y526H;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Postswidget/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = Postswidget;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MARKETING_VERSION = 1.0;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.lucas-goldner.golden-ios-extensions.Postswidget";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Profile;
+		};
 		4DE9F9D42B493A6E0015F780 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -1414,6 +1692,16 @@
 				4D69DAAA2BD44F360011397E /* Debug */,
 				4D69DAAB2BD44F360011397E /* Release */,
 				4D69DAAC2BD44F360011397E /* Profile */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4D69DB232BE4370F0011397E /* Build configuration list for PBXNativeTarget "PostswidgetExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4D69DB202BE4370F0011397E /* Debug */,
+				4D69DB212BE4370F0011397E /* Release */,
+				4D69DB222BE4370F0011397E /* Profile */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
