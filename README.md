@@ -35,7 +35,7 @@ An overview over "most" extensions can be seen [here!](https://developer.apple.c
 | Sticker Pack                     | Add custom stickers to Messages.                                                                    | ❌         |          |
 | Thumbnail                        | Display thumbnails of your custom document types in all apps.                                       | ❌         |          |
 | Virtual Conference               | Integrate your video conferencing service directly into events on user’s calendars.                 | ❌         |          |
-| Widgets                          | Show relevant, glanceable content from your app on the iOS Home Screen and Lock Screen, macOS Notification Center, and as complications in watchOS. | ❌         |          |
+| Widgets                          | Show relevant, glanceable content from your app on the iOS Home Screen and Lock Screen, macOS Notification Center, and as complications in watchOS. | ✅          |          |
 
 ## Potential issue
 
