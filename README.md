@@ -14,9 +14,10 @@ An overview over "most" extensions can be seen [here!](https://developer.apple.c
 | AutoFill Credential Provider     | Surface credentials from your app in Password Autofill and pull your app’s password data into the Password AutoFill workflow. | ❌         |          |
 | Broadcast Setup UI / Broadcast UI| Capture the contents of a user’s screen to stream to a video broadcast service.                      | ❌         |          |
 | Call Directory                   | Display caller identification from your appʼs custom contact list so users know who’s calling.       | ❌         |          |
+| Callkit                   | Receiving and calling people through voip with pushkit.       | ✅          |  [flutter_callkit_incoming](https://pub.dev/packages/flutter_callkit_incoming)        |
 | ClassKit Content Provider        | Update the status of your appʼs activities so that status is visible in the Schoolwork app.         | ❌         |          |
 | Content Blocker                  | Provide rules for hiding elements, blocking loads, and stripping cookies from Safari requests.      | ❌         |          |
-| Home Screen Quick Actions                  | Provide rules for hiding elements, blocking loads, and stripping cookies from Safari requests.      | ✅         | [Quick Actions](https://pub.dev/packages/quick_actions)      |
+| Home Screen Quick Actions                  | Quick Actions are shortcuts that appear when the user long-presses your app icon on the home screen.      | ✅         | [Quick Actions](https://pub.dev/packages/quick_actions)      |
 | File Provider                    | Let other apps access the documents and directories stored and managed by your app.                 | ❌         |          |
 | Intents                          | Let users interact with your app using Siri.                                                        | ❌         |          |
 | Intents UI                       | Customize the interface for interactions with your app in Siri conversations or Maps.               | ❌         |          |

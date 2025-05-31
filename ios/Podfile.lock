@@ -1,5 +1,9 @@
 PODS:
+  - CryptoSwift (1.8.4)
   - Flutter (1.0.0)
+  - flutter_callkit_incoming (0.0.1):
+    - CryptoSwift
+    - Flutter
   - home_widget (0.0.1):
     - Flutter
   - path_provider_foundation (0.0.1):
@@ -10,13 +14,20 @@ PODS:
 
 DEPENDENCIES:
   - Flutter (from `Flutter`)
+  - flutter_callkit_incoming (from `.symlinks/plugins/flutter_callkit_incoming/ios`)
   - home_widget (from `.symlinks/plugins/home_widget/ios`)
   - path_provider_foundation (from `.symlinks/plugins/path_provider_foundation/darwin`)
   - quick_actions_ios (from `.symlinks/plugins/quick_actions_ios/ios`)
 
+SPEC REPOS:
+  trunk:
+    - CryptoSwift
+
 EXTERNAL SOURCES:
   Flutter:
     :path: Flutter
+  flutter_callkit_incoming:
+    :path: ".symlinks/plugins/flutter_callkit_incoming/ios"
   home_widget:
     :path: ".symlinks/plugins/home_widget/ios"
   path_provider_foundation:
@@ -25,7 +36,9 @@ EXTERNAL SOURCES:
     :path: ".symlinks/plugins/quick_actions_ios/ios"
 
 SPEC CHECKSUMS:
+  CryptoSwift: e64e11850ede528a02a0f3e768cec8e9d92ecb90
   Flutter: e0871f40cf51350855a761d2e70bf5af5b9b5de7
+  flutter_callkit_incoming: 417dd1b46541cdd5d855ad795ccbe97d1c18155e
   home_widget: 0434835a4c9a75704264feff6be17ea40e0f0d57
   path_provider_foundation: 3784922295ac71e43754bd15e0653ccfd36a147c
   quick_actions_ios: 56f3cbaa71e94f212838d1f9fe354bd0734779bf
