@@ -9,7 +9,8 @@ import 'package:golden_ios_extensions/extensions/share/share_page_from_extension
 enum GoldenExtensionRoutes {
   initRoute("/"),
   importFromFlutterAction("/importFromFlutterAction"),
-  sharedExtension("/shareLinkFlutterShare");
+  sharedExtension("/shareLinkFlutterShare"),
+  homeScreenQuickActions("/homeScreenQuickActions");
 
   const GoldenExtensionRoutes(this.path);
   final String path;
@@ -35,6 +36,11 @@ class RouteGenerator {
         return CupertinoPageRoute(
             builder: (_) =>
                 ActionPageFromExtension(removePrefix(settings.name ?? "")));
+      case String s
+          when s.contains(GoldenExtensionRoutes.importFromFlutterAction.path):
+        return CupertinoPageRoute(
+            builder: (_) =>
+                const ExtensionPage(Extensions.homeScreenQuickActions, null));
       case String s when s.contains(GoldenExtensionRoutes.sharedExtension.path):
         return CupertinoPageRoute(
             builder: (_) => const SharePageFromExtension());

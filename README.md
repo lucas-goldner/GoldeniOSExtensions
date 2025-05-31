@@ -4,7 +4,7 @@ A new Flutter project demonstrating various different iOS Extensions inside of a
 
 ## Table of extensions
 
-An overview over all extensions can be seen [here!](https://developer.apple.com/app-extensions/)
+An overview over "most" extensions can be seen [here!](https://developer.apple.com/app-extensions/)
 
 | Extension Point                  | Description                                                                                          | Implemented | Comments |
 |----------------------------------|------------------------------------------------------------------------------------------------------|-------------|----------|
@@ -16,6 +16,7 @@ An overview over all extensions can be seen [here!](https://developer.apple.com/
 | Call Directory                   | Display caller identification from your appʼs custom contact list so users know who’s calling.       | ❌         |          |
 | ClassKit Content Provider        | Update the status of your appʼs activities so that status is visible in the Schoolwork app.         | ❌         |          |
 | Content Blocker                  | Provide rules for hiding elements, blocking loads, and stripping cookies from Safari requests.      | ❌         |          |
+| Home Screen Quick Actions                  | Provide rules for hiding elements, blocking loads, and stripping cookies from Safari requests.      | ✅         | [Quick Actions](https://pub.dev/packages/quick_actions)      |
 | File Provider                    | Let other apps access the documents and directories stored and managed by your app.                 | ❌         |          |
 | Intents                          | Let users interact with your app using Siri.                                                        | ❌         |          |
 | Intents UI                       | Customize the interface for interactions with your app in Siri conversations or Maps.               | ❌         |          |

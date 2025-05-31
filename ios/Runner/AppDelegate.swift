@@ -2,7 +2,7 @@ import Flutter
 import UIKit
 import Photos
 
-@UIApplicationMain
+@main
 @objc class AppDelegate: FlutterAppDelegate {
     private var schemePrefix = "ImportMedia";
     let kEventsChannelMedia: String = "com.lucas-goldner.golden-ios-extensions/import"

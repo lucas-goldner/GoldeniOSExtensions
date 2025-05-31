@@ -9,6 +9,9 @@ enum Extensions {
     description:
         "Action Extensions are custom actions that are added to the share sheet to invoke your application from any other app.",
   ),
+  homeScreenQuickActions('Home Screen Quick Actions',
+      description:
+          "Quick Actions are shortcuts that appear when the user long-presses your app icon on the home screen."),
   autofill("Autofill", description: ""),
   callkit("Callkit", description: ""),
   widget("Widget", description: ""),
@@ -34,6 +37,7 @@ extension ExtensionsExtension on Extensions {
           ActionContent(data == null ? [] : data as List<ImportedFile>),
         Extensions.share =>
           ShareContent(data == null ? null : data as (String, String)),
+        Extensions.homeScreenQuickActions => const SizedBox.shrink(),
         Extensions.autofill => const SizedBox.shrink(),
         Extensions.callkit => const SizedBox.shrink(),
         Extensions.widget => const SizedBox.shrink(),
